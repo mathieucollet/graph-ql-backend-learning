@@ -11,6 +11,7 @@ Following the [howtographql](https://www.howtographql.com/) tutorial
 
 ## Installation instructions
 - `npm install`
+- `npx prisma migrate`
 - `npm run dev` / `npm run start`
 
 ## Usage

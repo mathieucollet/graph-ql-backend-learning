@@ -42,7 +42,7 @@ const main = async () => {
         request,
         schema,
         operationName,
-        contextFactory,
+        contextFactory: () => contextFactory(req),
         query,
         variables,
       })
