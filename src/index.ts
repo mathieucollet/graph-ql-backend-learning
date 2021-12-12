@@ -9,6 +9,7 @@ import {
   shouldRenderGraphiQL
 } from "graphql-helix"
 import {schema} from "./schema";
+import {contextFactory} from "./context";
 
 const main = async () => {
   const server = fastify()
@@ -41,6 +42,7 @@ const main = async () => {
         request,
         schema,
         operationName,
+        contextFactory,
         query,
         variables,
       })
